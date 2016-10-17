@@ -18,4 +18,8 @@ cf push
 
 #update role permissions
 cf set-space-role $LDAP $org $space SpaceDeveloper
+cf set-space-role $LDAP $org $space SpaceManager
 cf set-org-role $LDAP $org OrgManager
+
+#list space users and groups
+cf space-users $org $space
