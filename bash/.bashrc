@@ -53,3 +53,13 @@ alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
+
+##Cyberark
+cark(){
+if [ $# -ne 2 ] ; then
+ echo usage 'qa target user'
+fi
+hostName=$(nslookup $1 | awk '{ if ($1 == "Name:") { host = $2 } } END { print host }')
+sed -i bak '/^pimssh-qa/d' /Users/dkb0294/.ssh/known_hosts
+ssh dkb0294@$2@$hostName@pimssh-qa.homedepot.com
+}
