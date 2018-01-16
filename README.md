@@ -14,7 +14,7 @@ To get the bash aliases to work, you need to copy both the .bash_profile and .ba
 http://ss64.com/bash/alias.html
 http://apple.stackexchange.com/questions/51036/what-is-the-difference-between-bash-profile-and-bashrc
 
-##Cloud Foundry commands
+## Cloud Foundry commands
 
 The `pcf` directory has command references for
 * login
