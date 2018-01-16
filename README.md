@@ -12,6 +12,7 @@ To get the bash aliases to work, you need to copy both the .bash_profile and .ba
   * Includes useful aliases for development on mac
   
 http://ss64.com/bash/alias.html
+
 http://apple.stackexchange.com/questions/51036/what-is-the-difference-between-bash-profile-and-bashrc
 
 ## Cloud Foundry commands
