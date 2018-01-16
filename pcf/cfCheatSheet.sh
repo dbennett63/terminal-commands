@@ -1,8 +1,11 @@
 #login to THD PCF NP
-cf login -a http://api.run-np.homedepot.com/
+cf login -a $endpoint
+
+#login to THD GCP NP
+cf login -a $endpoint -sso --skip-ssl-validation
 
 #target an org
-cf target -o bois-device-platform
+cf target -o $org
 
 #target a space
 cf target -s development
