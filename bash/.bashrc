@@ -48,6 +48,26 @@ alias grr='git remote rm'
 alias gpu='git pull'
 alias gcl='git clone'
 
+## iTerm
+ghc() {
+  cd ~/workspace/github-com
+  echo -e '\033]0;github-com\007'
+  pwd
+}
+
+ghw() {
+  cd ~/workspace/github-wayfair
+  echo -e '\033]0;github-wayfair\007'
+  pwd
+}
+
+glw() {
+  cd ~/workspace/gitlab-wayfair
+  echo -e '\033]0;gitlab-wayfair\007'
+  pwd
+}
+
+
 ##Rando
 alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%T"'
