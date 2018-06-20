@@ -32,7 +32,7 @@ alias cfzblogin='cf login -a $api -u $user'
 alias cfnplogin='cf login -a $api -u $user'
 alias cftail='cf logs'
 
-## Git
+## Git 
 alias ga='git add .'
 alias gp='git push'
 alias gl='git log'
