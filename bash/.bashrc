@@ -1,6 +1,6 @@
 ## get rid of command not found ##
 alias cd..='cd ..'
- 
+
 ## a quick way to get out of current directory ##
 alias ..='cd ..'
 alias ...='cd ../../../'
@@ -13,14 +13,14 @@ alias .5='cd ../../../../..'
 alias ll='ls -la'
 
 ## Editor
-alias subl='open -a /Applications/TextMate.app'
-alias gedit='open -a /Applications/TextMate.app'
-alias tm='open -a /Applications/TextMate.app'
-alias vi='open -a /Applications/TextMate.app'
-alias nano='open -a /Applications/TextMate.app'
+alias subl='open -a /Applications/Atom.app'
+alias gedit='open -a /Applications/Atom.app'
+alias tm='open -a /Applications/Atom.app'
+alias vi='open -a /Applications/Atom.app'
+alias nano='open -a /Applications/Atom.app'
 
 ## Opsware
-alias opsware='ssh -2222 dkb0294@opswaregshell@homedepot.com'
+alias opsware='ssh -2222 $user@opswaregshell@$domain'
 
 ## IDES
 alias devweb='open -a /Applications/WebStore.app'
@@ -28,8 +28,8 @@ alias devjava='open -a /Applications/IntelliJ\ IDEA\ 15\ CE.app'
 alias devandroid='open -a /Applications/Android\ Studio.app'
 
 ## PCF
-alias cfzblogin='cf login -a https://api.run-zb.homedepot.com/ -u dkb0294'
-alias cfnplogin='cf login -a https://api.run-np.homedepot.com/ -u dkb0294'
+alias cfzblogin='cf login -a $api -u $user'
+alias cfnplogin='cf login -a $api -u $user'
 alias cftail='cf logs'
 
 ## Git
@@ -60,6 +60,6 @@ if [ $# -ne 2 ] ; then
  echo usage 'qa target user'
 fi
 hostName=$(nslookup $1 | awk '{ if ($1 == "Name:") { host = $2 } } END { print host }')
-sed -i bak '/^pimssh-qa/d' /Users/dkb0294/.ssh/known_hosts
-ssh dkb0294@$2@$hostName@pimssh-qa.homedepot.com
+sed -i bak '/^pimssh-qa/d' /Users/$user/.ssh/known_hosts
+ssh $user@$2@$hostName@$domain
 }
