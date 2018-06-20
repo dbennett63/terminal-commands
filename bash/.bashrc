@@ -67,6 +67,8 @@ glw() {
   pwd
 }
 
+## Docker
+eval "$(docker-machine env default)"
 
 ##Rando
 alias path='echo -e ${PATH//:/\\n}'
