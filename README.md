@@ -4,10 +4,8 @@ Useful commands for development and fs nav
 
 ## Aliases for Mac terminal
 
-To get the shell aliases to work, you need to copy the .profile, .zshrc, .bash_profile and .bashrc to the home directory `cd ~` and restart your terminal. You can refresh .bashrc in session by calling `. ~/.bashrc`. If you already have these files, you can just copy and paste the pieces you want into the existing files.
+To get the shell aliases to work, you need to copy the .profile, .zshrc, and .bashrc to the home directory `cd ~` and restart your terminal. You can refresh .bashrc in session by calling `. ~/.bashrc`. If you already have these files, you can just copy and paste the pieces you want into the existing files.
 
-* `shell/.bash_profile`
-  * Includes colors for ls command and autoload of ~/.bashrc
 * `shell/.bashrc`
   * Includes useful aliases for development on mac
 * `shell/.zshrc`
