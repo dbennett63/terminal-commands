@@ -68,7 +68,9 @@ glw() {
 }
 
 ## Docker
-eval "$(docker-machine env default)"
+dockssh(){
+  docker exec -it $1 /bin/bash
+}
 
 ##Rando
 alias path='echo -e ${PATH//:/\\n}'
