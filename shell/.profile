@@ -1,3 +1,7 @@
+##colore
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
 ## get rid of command not found ##
 alias cd..='cd ..'
 

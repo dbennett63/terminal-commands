@@ -19,3 +19,6 @@ gcr.io/extreme-signer-191920/helloworld
 kubectl run helloworld --image=gcr.io/extreme-signer-191920/helloworld --port 3000
 
 kubectl expose deployment hello-web --type=LoadBalancer --port 80 --target-port 8080
+
+#remote into container
+docker exec -it <container-name> /bin/bash
