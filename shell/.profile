@@ -71,6 +71,18 @@ glw() {
   pwd
 }
 
+minerva() {
+  cd ~/workspace/gitlab-wayfair/minerva
+  echo -e '\033]0;glw-minerva\007'
+  pwd
+}
+
+termcmd() {
+  cd ~/workspace/github-com/terminal-commands
+  echo -e '\033]0;ghc-termcmd\007'
+  pwd
+}
+
 ## Docker
 dockssh(){
   docker exec -it $1 /bin/bash
